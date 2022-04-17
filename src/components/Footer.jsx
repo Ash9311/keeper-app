@@ -1,12 +1,14 @@
 import React from "react";
-import reactDom from "react-dom"; 
 
 function Footer(){
-    
+    let date = new Date();
+let year = date.getFullYear();
     return (
-    <h1 className="footer h1">Keeper</h1>
+        <footer>
+        <p>Copyright © {year}</p>
+        </footer>
     );
    
-};
+}
 
 export default Footer;
